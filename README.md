@@ -14,7 +14,7 @@ If you are looking for an android and iOS library for Country selector or Countr
 
 ## Example
 
-![]()
+![](https://github.com/Deepak-811/country_code_picker/blob/master/screen-capture.gif?raw=true)
 
 ## Installation
 
