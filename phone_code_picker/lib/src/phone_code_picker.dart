@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:dial_code_picker/country.dart';
+import 'country.dart';
 import 'country_list.dart';
 
-class DialCodePicker extends StatefulWidget {
+class PhoneCodePicker extends StatefulWidget {
   final Color primaryColor;
   final Function(Country counter) onSelected;
-  const DialCodePicker({Key key,this.primaryColor = Colors.blueAccent,@required this.onSelected}) : assert(primaryColor!=null), super(key: key);
+  const PhoneCodePicker({Key key,this.primaryColor = Colors.blueAccent,@required this.onSelected}) : assert(primaryColor!=null), super(key: key);
+
 
   @override
-  _DialCodePickerState createState() => _DialCodePickerState();
+  _PhoneCodePickerState createState() => _PhoneCodePickerState();
 }
 
-class _DialCodePickerState extends State<DialCodePicker> {
+class _PhoneCodePickerState extends State<PhoneCodePicker> {
 
   final _searchTextController = TextEditingController();
 
@@ -41,8 +42,8 @@ class _DialCodePickerState extends State<DialCodePicker> {
               padding: const EdgeInsets.all(10),
               child: Container(
                 decoration: BoxDecoration(
-                  color: widget.primaryColor.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(4)
+                    color: widget.primaryColor.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(4)
                 ),
                 width: 60,
                 height: 8,
@@ -61,9 +62,9 @@ class _DialCodePickerState extends State<DialCodePicker> {
               style: TextStyle(color: widget.primaryColor,fontSize: 14),
               onChanged:_onSearch,
               decoration: InputDecoration(
-                border: InputBorder.none,
-                hintText: 'Search here..',
-                hintStyle: TextStyle(color: widget.primaryColor.withOpacity(0.5),fontSize: 14)
+                  border: InputBorder.none,
+                  hintText: 'Search here..',
+                  hintStyle: TextStyle(color: widget.primaryColor.withOpacity(0.5),fontSize: 14)
               ),
             ),
           ),
@@ -101,4 +102,5 @@ class _DialCodePickerState extends State<DialCodePicker> {
 
     });
   }
+
 }

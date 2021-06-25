@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
-
-import 'package:dial_code_picker/dial_code_picker.dart';
+import 'package:phone_code_picker/phone_code_picker.dart';
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -19,7 +18,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
-        title: Text('Country code picker'),
+        title: Text('Phone code picker'),
       ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -28,7 +27,7 @@ class _HomeState extends State<Home> {
             Center(
               child: TextButton(
                 onPressed: _pickCode,
-                child: Text('Pick Dial code'),
+                child: Text('Pick phone code'),
               ),
             ),
 
@@ -52,7 +51,7 @@ class _HomeState extends State<Home> {
       ),
       builder: (_) => Container(
         padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom),
-        child: DialCodePicker(
+        child: PhoneCodePicker(
           primaryColor: Colors.deepOrange,
           onSelected: (country) {
             setState(() {

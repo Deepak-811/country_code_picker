@@ -1,5 +1,4 @@
-import 'package:dial_code_picker/country.dart';
-
+import 'country.dart';
 
 final List<Country> countries = [
   Country(name: "Israel",dialCode: "+972",code: "IL"),

@@ -1,6 +1,6 @@
-# Dial code picker (Counry code picker)
+# Phone code picker (Country code picker)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)     ![](https://img.shields.io/badge/pub-0.0.1-success)   ![](https://img.shields.io/badge/platform-Android%7C%20%20ios-blue)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)     ![](https://img.shields.io/badge/pub-1.0.0-success)   ![](https://img.shields.io/badge/platform-Android%7C%20%20ios-blue)
 
 If you are looking for an android and iOS library for Country selector or Country Dial Code selector, this is the perfect place for you.
 
@@ -22,13 +22,13 @@ Install the dependencies.
 
 ```dart
 dependencies:
-    dial_code_picker: latest-version
+    phone_code_picker: latest-version
 ```
 
 ## Import
 
 ```dart
-import 'package:dial_code_picker/dial_code_picker.dart';
+import 'package:phone_code_picker/phone_code_picker.dart';
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ void _pickCode(){
       ///make sure bottom padding is set
       ///otherwise when softkeyboard appears the Modal will be get small.
         padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewPadding.bottom),
-        child: DialCodePicker(
+        child: PhoneCodePicker(
           primaryColor: Colors.deepOrange,
           onSelected: (country) {
             ///use the selected country.
@@ -85,7 +85,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
 
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 
