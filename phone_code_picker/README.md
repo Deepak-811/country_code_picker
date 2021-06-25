@@ -1,6 +1,6 @@
 # Phone code picker (Country code picker)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)     ![](https://img.shields.io/badge/pub-1.0.0-success)   ![](https://img.shields.io/badge/platform-Android%7C%20%20ios-blue)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)     ![](https://img.shields.io/badge/pub-0.0.2-blueviolet)   ![](https://img.shields.io/badge/platform-Android%7C%20%20ios-blue)
 
 If you are looking for an android and iOS library for Country selector or Country Phone Code selector, this is the perfect place for you.
 

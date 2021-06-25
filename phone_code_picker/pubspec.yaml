@@ -1,11 +1,11 @@
 name: phone_code_picker
-description: A simple phone code picker for flutter.
-version: 0.0.1
+description: A simple country code picker or phone code picker for flutter.
+version: 0.0.2
 #author: Deepak Gupta
 homepage: https://github.com/Deepak-811/country_code_picker
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
