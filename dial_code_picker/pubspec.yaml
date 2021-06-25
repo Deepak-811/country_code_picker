@@ -2,7 +2,7 @@ name: dial_code_picker
 description: A simple dial code picker for flutter.
 version: 0.0.1
 author: Deepak Gupta <deepakguptah857@gmail.com>
-homepage: ''
+homepage: https://github.com/Deepak-811/country_code_picker
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

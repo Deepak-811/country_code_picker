@@ -11,6 +11,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  String _selectedCode='';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,16 +21,24 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.deepOrange,
         title: Text('Country code picker'),
       ),
-        body: Center(
-          child: TextButton(
-            onPressed: _pickCode,
-            child: Text('Pick Dial code'),
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Center(
+              child: TextButton(
+                onPressed: _pickCode,
+                child: Text('Pick Dial code'),
+              ),
+            ),
+
+            Text('$_selectedCode'),
+          ],
         ),
     );
   }
 
-  Future<void> _pickCode()async{
+  void _pickCode(){
     showModalBottomSheet(
       context: context,
       isDismissible: true,
@@ -44,7 +55,9 @@ class _HomeState extends State<Home> {
         child: DialCodePicker(
           primaryColor: Colors.deepOrange,
           onSelected: (country) {
-            print(country.code);
+            setState(() {
+              _selectedCode = country.dialCode;
+            });
           },
         ),
       ),
